@@ -20,11 +20,20 @@ class DemoSeeder extends Seeder
             return;
         }
 
+        // Kata sandi demo tidak disimpan di repositori; wajib diisi lewat .env lokal.
+        $sandi = (string) config('lapor.demo_warga_password');
+
+        if ($sandi === '') {
+            $this->command?->warn('DEMO_WARGA_PASSWORD belum diisi di .env — data contoh dilewati.');
+
+            return;
+        }
+
         $budi = User::firstOrCreate(
             ['email' => config('lapor.demo_warga_email')],
             [
                 'name' => 'Budi Santoso',
-                'password' => config('lapor.demo_warga_password'),
+                'password' => $sandi,
                 'no_whatsapp' => '081234567890',
                 'alamat' => 'Jl. Melati No. 12, RT 04/RW 07',
             ]
@@ -34,7 +43,7 @@ class DemoSeeder extends Seeder
             ['email' => 'siti@laporpak.id'],
             [
                 'name' => 'Siti Rahayu',
-                'password' => config('lapor.demo_warga_password'),
+                'password' => $sandi,
                 'no_whatsapp' => '081298765432',
                 'alamat' => 'Jl. Kenanga No. 5, RT 04/RW 07',
             ]
@@ -44,7 +53,7 @@ class DemoSeeder extends Seeder
             ['email' => 'agus@laporpak.id'],
             [
                 'name' => 'Agus Prasetyo',
-                'password' => config('lapor.demo_warga_password'),
+                'password' => $sandi,
                 'no_whatsapp' => '081377788899',
                 'alamat' => 'Jl. Anggrek No. 21, RT 02/RW 07',
             ]
@@ -54,7 +63,7 @@ class DemoSeeder extends Seeder
             ['email' => 'dewi@laporpak.id'],
             [
                 'name' => 'Dewi Lestari',
-                'password' => config('lapor.demo_warga_password'),
+                'password' => $sandi,
                 'no_whatsapp' => '081355566677',
                 'alamat' => 'Jl. Dahlia No. 8, RT 04/RW 07',
             ]

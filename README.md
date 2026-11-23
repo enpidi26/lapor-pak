@@ -90,12 +90,9 @@ Seeder tidak menimpa akun yang emailnya sudah terdaftar. Tombol masuk cepat di h
 
 ## Akun demo
 
-Tersedia setelah `migrate --seed` di lingkungan lokal.
+Data contoh dibuat oleh `DemoSeeder`, yang hanya berjalan ketika `APP_ENV=local`. Akun warga demo memakai nilai `DEMO_WARGA_EMAIL` dan `DEMO_WARGA_PASSWORD` dari `.env` lokal, sedangkan akun admin memakai `ADMIN_EMAIL` dan `ADMIN_PASSWORD`. Kata sandi sengaja tidak disertakan di repositori.
 
-| Peran  | Email               | Password        |
-| ------ | ------------------- | --------------- |
-| Warga  | `budi@laporpak.id`  | `wargaLapor1`   |
-| Admin  | `admin@laporpak.id` | `LaporPak#2025` |
+Sebelum aplikasi dipasang di server, pastikan `APP_ENV=production`, `LAPOR_DEMO_AKTIF=false`, dan `DemoSeeder` tidak dijalankan. Contoh konfigurasi produksi ada di [`.env.production.example`](.env.production.example).
 
 ## Pengujian
 

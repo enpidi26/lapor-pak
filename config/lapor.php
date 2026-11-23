@@ -38,7 +38,7 @@ return [
 
     'demo_aktif' => (bool) env('LAPOR_DEMO_AKTIF', false),
     'demo_warga_email' => env('DEMO_WARGA_EMAIL', 'budi@laporpak.id'),
-    'demo_warga_password' => env('DEMO_WARGA_PASSWORD', 'wargaLapor1'),
+    'demo_warga_password' => env('DEMO_WARGA_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

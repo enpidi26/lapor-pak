@@ -61,7 +61,7 @@
                 @include('partials.flash')
                 @yield('content')
 
-                <p class="auth__foot">© {{ now()->year }} Lapor Pak. Untuk lingkungan yang lebih baik.</p>
+                <p class="auth__foot">© {{ now()->year }} Lapor Pak. Hak cipta dilindungi.</p>
             </div>
         </main>
     </div>

@@ -140,4 +140,8 @@ Tangkapan layar dan penjelasan proyek dalam bahasa nonteknis tersedia di [`dokum
 
 ## Lisensi
 
-Dibuat untuk keperluan pembelajaran dan penggunaan internal RT.
+Proyek ini **bukan** perangkat lunak open source. Seluruh hak dilindungi undang-undang; ketentuan lengkapnya ada di [`LICENSE`](LICENSE).
+
+Kode dipublikasikan untuk keperluan melihat dan menilai karya. Menyalin, mengubah, mendistribusikan, atau menjalankan aplikasi ini di server lain memerlukan izin tertulis dari pemegang hak cipta.
+
+© 2026 enpidi26.

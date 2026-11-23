@@ -4,7 +4,12 @@
     "type": "project",
     "description": "Saluran pengaduan warga RT berbasis Laravel.",
     "keywords": ["laravel", "framework"],
-    "license": "MIT",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "enpidi26"
+        }
+    ],
     "require": {
         "php": "^8.3",
         "laravel/framework": "^13.17",

@@ -32,7 +32,7 @@
         </main>
 
         <footer class="app-foot">
-            <p>© {{ now()->year }} Lapor Pak</p>
+            <p>© {{ now()->year }} Lapor Pak. Hak cipta dilindungi.</p>
             <p>Suara Warga, Langkah Perubahan.</p>
         </footer>
     </div>

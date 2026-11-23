@@ -21,6 +21,9 @@
 /storage/*.key
 /storage/pail
 /vendor
+
+# arsip bukti rilis — disimpan lokal, tidak untuk diunggah
+/arsip-rilis/
 _ide_helper.php
 Homestead.json
 Homestead.yaml

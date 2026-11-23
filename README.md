@@ -134,6 +134,10 @@ tests/                Pengujian fitur
 - Foto wajib JPG/PNG/WebP dengan batas ukuran, dan tanggal kejadian tidak boleh melewati hari ini
 - Login dan pendaftaran punya pembatasan percobaan
 
+## Dokumentasi
+
+Tangkapan layar dan penjelasan proyek dalam bahasa nonteknis tersedia di [`dokumentasi/LAPORAN.md`](dokumentasi/LAPORAN.md).
+
 ## Lisensi
 
 Dibuat untuk keperluan pembelajaran dan penggunaan internal RT.
